@@ -7,7 +7,7 @@
               border: none;
               color: white;
               width: 49.5% ;
-              height: 70%;
+              height: 100%;
               text-align: center;
               text-decoration: none;
               display: inline-block;
@@ -23,7 +23,6 @@
             </style>
             <script>
                 function Choice(n,m) {
-                    document.getElementById("text").remove()
                     document.getElementById("option"+m).remove()
                     document.getElementById("option"+n).style.cursor  = "default";
                     document.getElementById("option"+n).style.width  = "100%";
@@ -32,7 +31,6 @@
             </script> 
     </head>
     <body>
-        <h1 id="text" style="font-family: Arial">Choose one</h1>
         <button id="option1" class="button b1" onclick="Choice(1,2)"></button>
         <button id="option2" class="button b2" onclick="Choice(2,1)"></button>
     </body>
